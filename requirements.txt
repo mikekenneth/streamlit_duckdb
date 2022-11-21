@@ -1,0 +1,3 @@
+Faker
+streamlit
+duckdb
