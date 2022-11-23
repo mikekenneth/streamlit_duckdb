@@ -3,7 +3,6 @@ from faker import Faker
 from random import randint, random
 from uuid import uuid4
 
-Faker.seed(0)
 fake = Faker()
 
 customers = {
