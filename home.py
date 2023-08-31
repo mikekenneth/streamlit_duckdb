@@ -18,7 +18,7 @@ def execute_query(query: str, db: str, return_type: str = "df"):
             return con.execute(query).fetchall()
 
 
-@st.experimental_memo  # An optimization wrapper to memoize the result of the function
+@st.cache_data  # An optimization wrapper to memoize the result of the function
 def export_df(df):
     return df.to_csv(index=False).encode("utf-8")
 
